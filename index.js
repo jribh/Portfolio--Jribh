@@ -4,26 +4,54 @@ let desccol = document.querySelector(".desccol");
 let leftdesccol= document.querySelector("#leftdesccol");
 let rightdesccol= document.querySelector("#rightdesccol");
 
+let x = window.matchMedia("(min-width: 990px)");
+
 window.addEventListener('scroll', function() {
-    let value=window.scrollY*1.2;
+    
+  if(x.matches) {
+    let value=window.scrollY*1.4;
     screensize2.style.clipPath = "circle("+ value +"px at 50% 90%";
 
     let value2=0;
     let value3=0;
 
-    if(scrollY>1000){
+    if(scrollY>800){
     value2=window.scrollY*0.3-300;
     }
     
     leftdesccol.style.transform = "translateY(-"+ value2 +"px)";
     leftdesccol.style.opacity = (100- value2)+"%";
 
-    if(scrollY>1200){
+    if(scrollY>1000){
         value3=window.scrollY*0.15-180;
         }
 
     rightdesccol.style.transform = "translateY(-"+ value3 +"px)";
     rightdesccol.style.opacity = (100- value3)+"%";
+  }
+
+  else { //for mobile
+    let value=window.scrollY*4;
+    screensize2.style.clipPath = "circle("+ value +"px at 50% 90%";
+
+    let value2=0;
+    let value3=0;
+
+    if(scrollY>400){
+    value2=window.scrollY*0.6-240;
+    }
+    
+    leftdesccol.style.transform = "translateY(-"+ value2 +"px)";
+    leftdesccol.style.opacity = (100- value2)+"%";
+
+    if(scrollY>600){
+        value3=window.scrollY*0.3-180;
+    }
+
+    rightdesccol.style.transform = "translateY(-"+ value3 +"px)";
+    rightdesccol.style.opacity = (100- value3)+"%";
+  }
+    
 })
 
 let nav = document.querySelector("nav");

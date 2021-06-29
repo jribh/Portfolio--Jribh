@@ -52,8 +52,14 @@ html, body {
 
 .longbox {
     display:flex;
-    height:160vh;
+    height:145vh;
     align-items:flex-start;
+}
+
+@media (max-width:990px) {
+    .longbox {
+        height:100vh;
+    }
 }
 
 #screensize {
@@ -142,6 +148,7 @@ html, body {
 
 .img-fluid {
     max-width:90%;
+    transition: transform 0.5s;
 }
 
 @media (max-width:600px) {
@@ -210,7 +217,7 @@ nav {
 }
 
 .bottomnav {
-    position:fixed !important;
+    position:fixed;
     bottom:0;
     right:0;
     height:120px;
@@ -232,11 +239,6 @@ nav {
     transition:opacity 0.2s;
 }
 
-@media (max-width:1000px) {
-    .bottomnav {
-        display:none;
-    }
-}
 
 .centerblob {
     position:fixed !important;
@@ -249,6 +251,22 @@ nav {
     width:40px;
     border-radius: 50%;
     background-color: #B60351; */
+}
+
+@media (max-width:550px) {
+    .centerarrow {
+        transform:scale(0.65) translate(-50%,0) !important;
+        bottom:10px;
+    }
+
+    .centerblob {
+        /* bottom:0.5vw; */
+        transform:scale(0.6) translate(-80%, 25%);
+        /* transform: translate(-50%,50%) !important; */
+        margin:0 auto;
+        padding:0 auto;
+        text-align: center;
+    }
 }
 
 .centerarrow {
@@ -424,7 +442,7 @@ nav {
     }
 }
 
-@media (max-height:790px) {
+/* @media (max-height:790px) {
     #rightdesc, #rightdesccol {
         font-size : 6vw;    
     }
@@ -437,7 +455,7 @@ nav {
     .navflex {
         padding : 0.3em 5%;
     }
-}
+} */
 
 @media (max-width:1400px) and (min-width:990px) {
     #rightdesc, #rightdesccol {
@@ -657,10 +675,10 @@ display:block;
         font-size:3.3vw !important;
     }
     .checkout h2 {
-        font-size: 8vw;;
+        font-size: 5vw;;
     }
     .checkout h1 {
-        font-size: 12vw;
+        font-size: 7vw;
     }
 }
 
@@ -688,4 +706,33 @@ a:link {
 .boldhover:hover {
     font-weight: 600 !important;
     color:black !important;
+}
+
+@media (max-width:1000px) {
+    .bottomnav {
+        position:relative;
+        text-align: center;
+        background-color:#F0EFEB;
+    }
+    .iconsbottomnav {
+        text-align: center;
+    }
+}
+
+
+/* @media (max-width:1000px) {
+    .bottomnav {
+        display:none;
+    }
+} */
+
+@media (max-height:900px) and (min-width:962px) {
+    #bwsvgcontainer, #colsvgcontainer {
+        height:85%;
+    }
+}
+
+.projectdiv:hover img{
+    transform:scale(1.02);
+    
 }

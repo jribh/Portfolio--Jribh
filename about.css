@@ -142,6 +142,7 @@ html, body {
 
 .img-fluid {
     max-width:100% !important;
+    margin:0 0 -5px 0;
 }
 
 @media (max-width:600px) {

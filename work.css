@@ -142,6 +142,7 @@ html, body {
 
 .img-fluid {
     max-width:90%;
+    transition: transform 0.5s;
 }
 
 @media (max-width:600px) {
@@ -619,3 +620,21 @@ a:link {
     font-weight: 600 !important;
     color:black !important;
 }
+
+.projectdiv:hover img{
+    transform:scale(1.02);
+    
+}
+
+@media (max-width:400px) {
+    .recentworksdiv .recentworks {
+        font-size:3.3vw !important;
+    }
+    .checkout h2 {
+        font-size: 5vw;;
+    }
+    .checkout h1 {
+        font-size: 7vw;
+    }
+}
+
