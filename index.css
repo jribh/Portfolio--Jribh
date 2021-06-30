@@ -206,14 +206,14 @@ nav {
     text-align:right;
 }
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link {
     font-weight:400 !important;
-    color:#474E54 !important;
+    color:#474E54 ;
 }
 
-.nav-link:hover {
+.navbar-light .navbar-nav .nav-link:hover {
     font-weight:400 !important;
-    color:#1A1A1A !important;
+    color:#1A1A1A ;
 }
 
 .bottomnav {
@@ -224,6 +224,12 @@ nav {
     padding: 2em 5%;
     overflow:hidden;
     z-index:100;
+    transition:filter 0.2s ease-in-out
+}
+
+.invert {
+    filter:invert(100%);
+    transition:filter 0.2s ease-in-out;
 }
 
 .icon1, .icon2, .icon3 {
@@ -735,4 +741,22 @@ a:link {
 .projectdiv:hover img{
     transform:scale(1.02);
     
+}
+
+/* nav autohide */
+
+/* .scrolled-down{
+    transform:translateY(-100%); 
+    transition: all 0.3s ease-in-out;
+  }
+.scrolled-up{
+    transform:translateY(0); 
+    transition: all 0.3s ease-in-out;
+  } */
+
+#coverwhenscrolled {
+    background-color:white;
+    height:100px;
+    width:100px;
+    display:absolute;
 }
