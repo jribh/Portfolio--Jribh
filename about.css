@@ -649,3 +649,51 @@ a:hover {
     color:black;
     transition:0.25s;
 }
+
+.report {
+    background-color: #EFEFEF;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Playfair' sans-serif;
+    padding:2em 0 0 0;
+}
+
+.report a {
+    color:#474E54;
+    font-weight: 600;
+}
+
+.report:hover a {
+    color:#1A1A1A;
+    transition:color 0.2s;
+}
+
+@media (max-width:1000px) {
+    .report {
+        background-color: white;;
+    }
+}
+
+@media (max-width:500px) {
+    .report {
+        font-size:1.2em;
+    }
+}
+
+
+/* navbar scroll */
+
+header.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+nav {
+    transition:background-color 0.25s ease-in-out;
+}
+
+.nav-active {
+    background-color:rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+}

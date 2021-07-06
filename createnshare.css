@@ -70,6 +70,7 @@ html, body {
 
 .img-fluid {
     max-width:100% !important;
+    background-color:#F1F1FA;
 }
 
 @media (max-width:600px) {
@@ -353,9 +354,9 @@ a:hover {
     padding:5% 15%;
 }
 
-nav {
+/* nav {
     background-color:#F7F7F7;
-}
+} */
 
 .containerprojectb {
     background-color: #222126;
@@ -375,4 +376,82 @@ nav {
         margin:0 !important;
         background-color: #F7F7F7;
     }
+}
+
+/* Next and previous */
+
+.nextprojectdiv {
+    display:flex;
+    width:100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color:#1A1A1A;
+}
+
+@media(max-width:800px) {
+    .nextprojectdiv {
+        font-size:1.2em;
+    }
+}
+
+@media(max-width:480px) {
+    .nextprojectdiv {
+        font-size:1em;
+    }
+}
+
+@media(max-width:390px) {
+    .nextprojectdiv {
+        font-size:0.8em;
+    }
+}
+
+.previous {
+    width:50%;
+    text-align: center;
+    padding:2em;
+    transition:all 0.25s;
+}
+
+.next {
+    width:50%;
+    text-align: center;
+    padding:2em;
+    transition:all 0.25s;
+}
+
+.previous:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.previous:active {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.next:active {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* navbar scroll */
+
+/* header.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+} */
+
+
+
+.nav-active {
+    background-color:rgba(250, 250, 250, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+nav {
+    transition:background-color 0.25s ease-in-out !important;
 }

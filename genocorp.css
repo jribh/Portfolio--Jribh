@@ -350,51 +350,95 @@ a:hover {
   }
 
 .containerproject {
-    background-color: #F2E0D6;
+    background-color: #EFEFEF;
     padding:5% 15%;
 }
 
 @media (max-width:990px) {
     .containerproject {
-        background-color: #F2E0D6;
-        padding:4em 0 4em 0;
+        background-color: #EFEFEF;
+        padding:104px 0 4em 0;
     }
     .banner {
         margin:104px 0 0 0;
-        background-color: #F2E0D6;
+        background-color: #EFEFEF;
     }
     .banner2 {
         margin:0 !important;
-        background-color: #F2E0D6;
+        background-color: #EFEFEF;
     }
+}
+
+.img-fluid {
+    margin:-5px 0;
+}
+
+.report {
+    background-color: #EFEFEF;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Playfair' sans-serif;
+    padding:2em 0 0 0;
+}
+
+.report a {
+    color:#474E54;
+    font-weight: 600;
+}
+
+.report:hover a {
+    color:#1A1A1A;
+    transition:color 0.2s;
+}
+
+.website {
+    width:100%;
+}
+
+.containerproject2 {
+    background-color: #061F2D;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Next and previous */
 
 .nextprojectdiv {
     display:flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width:100%;
     font-family: 'Playfair Display', serif;
-    font-size: 1.5em;
+    font-size: 0.75em;
     color:#1A1A1A;
+    margin:3em 0 0 0;
 }
 
 @media(max-width:800px) {
     .nextprojectdiv {
-        font-size:1.2em;
+        font-size:0.6em;
+    }
+    .report a {
+        font-size:0.8em;
     }
 }
 
 @media(max-width:480px) {
     .nextprojectdiv {
-        font-size:1em;
+        font-size:0.5em;
+    }
+    .report a {
+        font-size:0.7em;
     }
 }
 
 @media(max-width:390px) {
     .nextprojectdiv {
-        font-size:0.8em;
+        font-size:0.4em;
+    }
+    .report a {
+        font-size:0.5em;
     }
 }
 
@@ -413,21 +457,67 @@ a:hover {
 }
 
 .previous:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .next:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .previous:active {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .next:active {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
+.websiteobject {
+    margin:0 auto;
+    padding:0 auto;
+    width:100vw;
+    height:95vh;
+}
+
+.linkwebsite {
+    font-size:2em;
+    margin:1em 0 5em 0;
+    font-family: 'Rajdhani', sans-serif;
+    transition:0.3s;
+}
+
+@media (max-width:900px) {
+    .linkwebsite {
+        font-size:1.2em;
+    }
+}
+
+@media (max-width:520px) {
+    .linkwebsite {
+        font-size:0.75em;
+    }
+}
+
+.imageforsmall {
+    display:none;
+}
+
+@media (max-width:990px) {
+    .imageforsmall {
+        display:block;
+    }
+    .imageforbig {
+        display:none;
+    }
+    .websiteobject {
+        display:none;
+    }
+}
+
+
+a:hover {
+    color:rgb(60, 128, 255);
+}
 
 
 /* navbar scroll */
@@ -443,6 +533,6 @@ nav {
 }
 
 .nav-active {
-    background-color:rgba(247, 236, 230, 0.7);
+    background-color:rgba(246, 245, 242, 0.7);
     backdrop-filter: blur(20px);
 }

@@ -70,6 +70,7 @@ html, body {
 
 .img-fluid {
     max-width:100% !important;
+    background-color:#F1F1FA;
 }
 
 @media (max-width:600px) {
@@ -367,4 +368,21 @@ a:hover {
         margin:0 !important;
         background-color: white;
     }
+}
+
+/* navbar scroll */
+
+header.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+nav {
+    transition:background-color 0.25s ease-in-out;
+}
+
+.nav-active {
+    background-color:rgba(246, 245, 242, 0.7);
+    backdrop-filter: blur(20px);
 }
